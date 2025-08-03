@@ -1,0 +1,58 @@
+# Simple Escrow Service - Contract Information
+
+## Contract Address
+ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER.escrow-service
+
+## Network
+Stacks Testnet
+
+## Deployment Details
+- Deployer: ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER
+- Network: testnet
+- Cost: 0.007 STX
+- Status: DEPLOYED & CONFIRMED ✅
+
+## Explorer Links
+- Contract: https://explorer.stacks.co/address/ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER.escrow-service?chain=testnet
+- Deployer: https://explorer.stacks.co/address/ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER?chain=testnet
+
+## API Endpoints
+- Stacks API: https://api.testnet.hiro.so
+- Contract Info: https://api.testnet.hiro.so/v1/contracts/ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER.escrow-service
+
+## Quick Test Commands
+```clarity
+;; Get contract stats
+(contract-call? 'ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER.escrow-service get-contract-stats)
+
+;; Create escrow (replace addresses as needed)
+(contract-call? 'ST2Q2VM6FEXCP1R0DSWPY0N0GN07KHW8C14JS6ZER.escrow-service create-escrow 
+  'ST2CY5V39NHDPWSXMW9QDT3HC3GD6Q6XX4CFRK9AG 
+  u1000000 
+  "Test escrow")
+```
+
+## Functions Available
+### Public Functions (6):
+- create-escrow
+- fund-escrow
+- confirm-delivery
+- dispute-escrow
+- cancel-escrow
+- refund-escrow
+
+### Read-Only Functions (5):
+- get-escrow
+- get-user-escrow-count
+- get-contract-stats
+- is-buyer
+- is-seller
+
+## Testing Status
+✅ All functions tested and working
+✅ Complete escrow flow verified
+✅ Error handling confirmed
+✅ Security checks passed
+
+## Demo Ready
+Contract is live and ready for demonstration!
